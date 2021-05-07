@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        splice方法：用来数组删除，添加，替换
+        有三个参数：
+            -参数一：起始下标
+            -参数二：想要截取的长度，如果为零，则表示不删除
+            -参数三：想替换的内容，如果不写，则不添加，不替换
+
+        */
+        let arr=[5,3,8,6,9,2,5,7,3,2,6];
+        // let re=arr.splice(0)
+        // console.log(re)//返回一个新数组，内容和arr中的一样
+
+        // let re1=arr.splice(0,3)
+        // console.log(re1)//返回一个新数组,数组内容是[5,3,8]
+        // let re2=arr.splice(0,2)
+        // console.log(re2) //返回[5,3]
+        // console.log(arr) //[8,6,9,2....]
+        //let re3=arr.splice(4,2,"a")
+        //console.log(re3)//[9,2]
+        //console.log(arr)//原数组中的9,2被"a"替换
+        let re4=arr.splice(4,0,"b")
+        console.log(re4)//空数组
+        console.log(arr)//在原数组下标为4的位置添加"b"
+    </script>
+</body>
+</html>

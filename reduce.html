@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        reduce方法：用来对数组中的值进行累加
+            -参数一：前一位数
+            -参数二：后一位数
+        */
+        let arr = [1, 2, 3, 4, 5];
+        let re = arr.reduce(function (p, n) {
+            console.log(p, n)
+            return p + n
+
+        })
+        console.log(re)//15
+    </script>
+</body>
+
+</html>

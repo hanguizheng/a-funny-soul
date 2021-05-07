@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+       /*
+       fliter方法用来过滤数组，将符合条件的值返回出去
+       */
+       let arr=[2,1,5,3,7]       
+       let re=arr.filter((item,index)=>{
+            return item>=3      
+       })
+       console.log(re)
+       console.log(arr)//原数组不发生改变
+   </script> 
+</body>
+</html>

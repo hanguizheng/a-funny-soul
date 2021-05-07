@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        sort方法：有两个参数，用来数组排序
+            -参数一：后面的数
+            -参数二：前面的数
+        */
+        let arr = [2,4,1,7,5,9]
+        let re=arr.sort(function(a,b){
+            return a-b
+        })
+        console.log(re)//a-b表示升序排列
+
+        let re1=arr.sort(function(a,b){
+            return b-a
+        })
+        console.log(re1)//b-a表示降序排列
+    </script>
+</body>
+</html>
